@@ -9,9 +9,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="p-5">
-    @include('layout.nav')
-    @yield('content')
+<body >
+    <div class="p-5">
+        @include('layout.nav')
+        @yield('content')
+    </div>
+    @include('layout.footer')
 </body>
 
 </html>

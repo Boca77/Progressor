@@ -9,7 +9,6 @@
                 <h1 class="title">Explore, track, and manage your game library!</h1>
                 <p class="text-uppercase mt-5">Join Us For Free</p>
                 <div class="btn btn-secondary my-5">Start Playing</div>
-
             </div>
             <img src="{{ asset('imgs/landing_banner.png') }}" alt="">
         </div>
@@ -48,55 +47,8 @@
         </div>
         <div class="categories mx-5 mt-5 p-3 border-bottom border-top py-5">
             <h3 class="text-center mb-4">Game Categories</h3>
-            <div class="d-flex flex-wrap gap-3 justify-content-center">
-                <div class="category px-5 py-3">
-                    Action
-                </div>
-                <div class="category px-5 py-3">
-                    Adventure
-                </div>
-                <div class="category px-5 py-3">
-                    Puzzle
-                </div>
-                <div class="category px-5 py-3">
-                    RPG
-                </div>
-                <div class="category px-5 py-3">
-                    Simulation
-                </div>
-                <div class="category px-5 py-3">
-                    Strategy
-                </div>
-                <div class="category px-5 py-3">
-                    Sports
-                </div>
-                <div class="category px-5 py-3">
-                    Family
-                </div>
-                <div class="category px-5 py-3">
-                    Indie
-                </div>
-                <div class="category px-5 py-3">
-                    Multiplayer
-                </div>
-                <div class="category px-5 py-3">
-                    Horror
-                </div>
-                <div class="category px-5 py-3">
-                    Causal
-                </div>
-                <div class="category px-5 py-3">
-                    Platformer
-                </div>
-                <div class="category px-5 py-3">
-                    Racing
-                </div>
-                <div class="category px-5 py-3">
-                    Shooter
-                </div>
-                <div class="category px-5 py-3">
-                    VR
-                </div>
+            <div class="categories-container d-flex flex-wrap gap-3 justify-content-center">
+                <!-- Categories will be dynamically loaded here -->
             </div>
         </div>
     </div>
