@@ -1,11 +1,92 @@
-@import 'tailwindcss';
+@import "bootstrap/dist/css/bootstrap.min.css";
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+:root{
+    --primary-bg: #2D333E;
+    --secondary-bg: #1B1F27;
+    --tertiary-bg: #C4C4C4;
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --text-green: #7FB800;
+    --text-blue: #00A6ED;
+
+    --primary-btn: #2D333E;
+    --secondary-btn: #00A6ED;
+
+    ::-webkit-scrollbar {
+        width: 3px;               
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1B1F27;     
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #00a6ed; 
+        border-radius: 10px;      
+    }
+
 }
+
+body{
+    color: white !important;
+    background-color: var(--secondary-bg) !important;
+}
+
+.pointer{
+    cursor: pointer !important;
+}
+
+.btn{
+    color: white !important;
+    border: none !important;
+    padding: 10px 50px !important;
+    border-radius: 2px !important;
+    transition: all 0.2s ease-in-out !important;
+    &:hover{
+        cursor: pointer !important;
+        scale: 1.05 !important;
+    }
+}
+
+.btn-primary{
+    background-color: var(--primary-btn) !important;
+    color: white !important;
+}
+
+.btn-secondary{
+    background-color: var(--secondary-btn) !important;
+    color: black !important;
+}   
+
+footer{
+    background: var(--tertiary-bg);
+    color: black !important;
+    .info{
+        p:hover{
+            cursor: pointer;
+            color: var(--text-blue);
+        }
+    }
+
+    svg:hover path{
+        fill : var(--text-blue) !important;
+    }
+}
+
+.landing-main{
+    background-color: var(--primary-bg) !important;
+    .hero{
+        h1{
+            font-size: 48px !important;
+            width: 75%;
+        }
+    }
+
+    .category:hover{
+        background-color: var(--secondary-btn) !important;
+        color: #000;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+}
+
