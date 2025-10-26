@@ -1,11 +1,57 @@
-@import 'tailwindcss';
+@import "bootstrap/dist/css/bootstrap.min.css";
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+:root{
+    --primary-bg: #2D333E;
+    --secondary-bg: #1B1F27;
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --text-green: #7FB800;
+
+    --primary-btn: #2D333E;
+    --secondary-btn: #00A6ED;
+}
+
+body{
+    color: white !important;
+    background-color: var(--secondary-bg) !important;
+}
+
+.btn{
+    color: white !important;
+    border: none !important;
+    padding: 10px 50px !important;
+    border-radius: 2px !important;
+    transition: all 0.2s ease-in-out !important;
+    &:hover{
+        cursor: pointer !important;
+        scale: 1.05 !important;
+    }
+}
+
+.btn-primary{
+    background-color: var(--primary-btn) !important;
+    color: white !important;
+}
+
+.btn-secondary{
+    background-color: var(--secondary-btn) !important;
+    color: black !important;
+}   
+
+
+.landing-main{
+    background-color: var(--primary-bg) !important;
+    .hero{
+        h1{
+            font-size: 48px !important;
+            width: 75%;
+        }
+    }
+
+    .category:hover{
+        background-color: var(--secondary-btn) !important;
+        color: #000;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
 }
