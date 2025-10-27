@@ -9,12 +9,19 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body >
-    <div class="p-5">
-        @include('layout.nav')
-        @yield('content')
-    </div>
-    @include('layout.footer')
+<body>
+    @if(!Request::is('login-signup'))
+        <div class="p-5">
+            @include('layout.nav')
+            @yield('content')
+        </div>
+        @include('layout.footer')
+    @else
+        <div>
+            @yield('content')
+        </div>
+    @endif
+        
 </body>
 
 </html>

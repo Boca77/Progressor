@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/login-signup', function () {
+    return view('login-signup');
+});
+
 
 Route::get('api/categories', function () {
     $filePath = '../storage/app/dummy/categories.json'; 
